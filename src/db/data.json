@@ -1,0 +1,81 @@
+{
+  "days": [
+    {
+      "id": 1,
+      "day": 1
+    },
+    {
+      "id": 2,
+      "day": 2
+    },
+    {
+      "id": 3,
+      "day": 3
+    }
+  ],
+  "words": [
+    {
+      "id": "422c",
+      "day": 1,
+      "jp": "愛",
+      "kor": "あい / 사랑",
+      "isDone": false
+    },
+    {
+      "id": "c78c",
+      "day": 1,
+      "jp": "相手",
+      "kor": "あいて / 상대",
+      "isDone": false
+    },
+    {
+      "id": "3556",
+      "day": 1,
+      "jp": "握手",
+      "kor": "あくしゅ / 악수",
+      "isDone": false
+    },
+    {
+      "id": "59f8",
+      "day": 2,
+      "jp": "合図",
+      "kor": "あいず / 신호",
+      "isDone": false
+    },
+    {
+      "id": "54c3",
+      "day": 2,
+      "jp": "赤字",
+      "kor": "あかじ / 빨간 글자, 적자",
+      "isDone": false
+    },
+    {
+      "id": "60bc",
+      "day": 2,
+      "jp": "角度",
+      "kor": "かくど / 각도",
+      "isDone": false
+    },
+    {
+      "id": "8fd7",
+      "day": 3,
+      "jp": "軌道",
+      "kor": "きどう / 궤도",
+      "isDone": false
+    },
+    {
+      "id": "ba93",
+      "day": 3,
+      "jp": "気まぐれ",
+      "kor": "きまぐれ / 변덕",
+      "isDone": false
+    },
+    {
+      "id": "1ed8",
+      "day": 3,
+      "jp": "却下",
+      "kor": "きゃっか / 각하, 기각",
+      "isDone": false
+    }
+  ]
+}
