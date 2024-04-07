@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 //label
+//이름이 겹치므로 word로 받은 props 데이터를 w로 바꾸어서 할당
 export default function Word({ word: w }) {
     const [word, setWord] = useState(w);
     const [isShow, setIsShow] = useState(false);
@@ -9,6 +10,8 @@ export default function Word({ word: w }) {
     function onShow() {
         setIsShow(!isShow);
     }
+    //기본적으로 show는 계속해서 보여주게 되어있음.
+
     function onDone() {
         fetch(`http://localhost:3001/words/${word.id}`, {
             method: 'PUT',
@@ -24,6 +27,8 @@ export default function Word({ word: w }) {
                 setIsDone(!isDone);
             }
         });
+        //put, update를 활용하여 데이터를 받아들임. headers 내용은 json-server기준 변할일은 없음
+        //body에 JSON타입으로 변환시켜 ...word의 값을 그대로 할당하고, isDone의 값을 뒤집음
     }
     function onDel() {
         if (window.confirm('삭제 하시겠습니까?')) {
@@ -42,6 +47,9 @@ export default function Word({ word: w }) {
     }
 
     return (
+        //isDone이 존재할경우 off라는 클래스를 적용시켜 스타일을 바꿈
+        //onChange에 onDone을 할당시켜 onDone이 바뀌게되는 체크박스여부를 확인함
+        //checked가 되어있을경우, isDone의 현재 state 정보를 반영함
         <tr className={isDone ? 'off' : ''}>
             <td>
                 <input onChange={onDone} checked={isDone} type="checkbox"></input>

@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom';
 
+//react-router를 통한 링크 할당
+//Link to를 활용하며, {}를 활용하여 수식등을 사용할 수 있음.
+//App.js 에서 링크를 할당중
+
 export default function Header() {
     return (
         <div className="header">
