@@ -16,7 +16,7 @@
 ### 기능
 
 -   REST API를 구축하여 데이터를 갱신하고 관리
--   CRUD를 지원하여 Rest-Server내에서의 삭제, 추가기능
+-   CRUD를 지원하여 Rest-Server내에서의 추가, 읽기, 수정, 삭제기능
 -   React-Router-DOM을 활용한 홈페이지 전환
 
 ### 주요 사용 라이브러리
