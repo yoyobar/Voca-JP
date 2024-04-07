@@ -7,6 +7,10 @@ export default function CreateWord() {
     const history = useNavigate();
     const [isLoading, setLoading] = useState(false);
 
+    //isLoading 여부를 확인하여, fetch가 진행중일땐 다시 fetch할 수 없게 제한
+    //데이터를 추가, POST를 통하여 각 데이터를 할당
+    //여기서 데이터는 useRef() 훅을 사용하며, 인풋등의 데이터를 불러올때 사용할 수 있음
+    //생성이 완료되면 useNavigate를 활용하여 해당주소로 이동시킴
     function onSubmit(e) {
         if (!isLoading) {
             setLoading(true);
